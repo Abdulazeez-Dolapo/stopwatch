@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Stopwatch</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+   <div class="container">
+
+      <div class="top-buttons">
+         <span id="sun">sun icon</span><span id="title">STOPWATCH</span><button id="switch" onclick="nightMode()">Dark Mode</button>
+      </div>
+
+      <div class="middle">
+         <div class="circle">
+            <p>
+               <span id="minute">00</span>"
+               <span id="seconds">00</span>"
+               <span id="milliseconds">00</span>
+            </p>
+         </div>
+      </div>
+
+      <div class="display-laps">
+         <ol>
+         </ol>
+      </div>
+
+      <div class="bottom-buttons">
+         <button id="reset" onclick="reset()"><i class="fas fa-sync-alt"></i></button>
+         <button id="play" onclick="start()">play</button>
+         <button id="lap" onclick="lap()"><i class="fas fa-stopwatch"></i></button>
+      </div>
+   </div>
+</body>
+</html>

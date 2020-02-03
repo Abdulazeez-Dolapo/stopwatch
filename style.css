@@ -1,0 +1,107 @@
+/* Main wrappers */
+html, body {
+   margin: 0;
+   padding: 0;
+   background-color: brown;
+}
+
+.container {
+   height: 600px;
+   display: grid;
+   grid-template-rows: 8% 42% 40% 10%;
+   width: 30%;
+   margin: auto;
+   margin-top: 10px;
+   box-sizing: content-box;
+   border: 5px solid black;
+   border-radius: 20px;
+   background-color: white;
+}
+
+/* Heading of the app */
+
+#sun {
+   float: left;
+   margin: 13px 0px 0px 15px;
+}
+
+#title {
+   margin-top: 10px;
+   font-size: 30px;
+   margin-left: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#switch {
+   float: right;
+   margin: 13px 10px 0px 0px;
+}
+
+/* Display lap times */
+.middle {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+}
+
+.circle {
+   border: 3px solid black;
+   height: 90%;
+   border-radius: 100%;
+   width: 60%;
+   margin: auto;
+   margin-top: 9px;
+}
+
+p {
+   font-size: 40px;
+   font-weight: bolder;
+   margin-top: 40%;
+   font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ol {
+   display: flex;
+   flex-direction: column-reverse;
+}
+li {
+   font-size: 20px;
+   font-weight: bold;
+   margin: 0px 0px 20px 120px;
+   letter-spacing: 3px;
+   text-decoration: underline;
+}
+
+.display-laps {
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+
+/* Bottom buttons */
+.bottom-buttons {
+   text-align: center;
+}
+
+#reset, #lap, #play {
+   margin: auto;
+   margin-top: 5px;
+   margin-right: 20px;
+   border: none;
+   font-size: 30px;
+}
+
+button {
+   height: 35px;
+   font-weight: bolder;
+   font-size: 17px;
+}
+
+button:hover {
+   cursor: pointer;
+   height: 32px;
+}
+
+span {
+   display: inline-block;
+}
